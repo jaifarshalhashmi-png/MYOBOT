@@ -1,4 +1,4 @@
-const { sql } = require('@vercel/postgres');
+const { neon } = require('@neondatabase/serverless');
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -12,6 +12,8 @@ module.exports = async function handler(req, res) {
     res.status(400).json({ error: 'Email is required' });
     return;
   }
+
+  const sql = neon(process.env.DATABASE_URL);
 
   try {
     await sql`
