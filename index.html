@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MYOBOT — Coming Soon</title>
+  <meta name="description" content="MYOBOT is coming soon. Join the waitlist to be first in line.">
+  <meta property="og:title" content="MYOBOT — Coming Soon">
+  <meta property="og:description" content="MYOBOT is coming soon. Join the waitlist to be first in line.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Premium Dynamic Backgrounds -->
+  <div class="bg-gradient-glow" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-grid-spotlight" aria-hidden="true"></div>
+  
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="top-nav reveal">
+      <a href="/" class="brand" aria-label="MYOBOT">
+        <span class="brand-word">MY<span class="brand-o">O</span>BOT</span>
+      </a>
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>Waitlist Active</span>
+      </div>
+    </header>
+
+    <main class="sections-container">
+      <!-- Section 1: Hero -->
+      <section class="hero-section" id="hero">
+        <!-- 3D CSS Planetary Gyroscope (Blueprint Aesthetic) -->
+        <div class="gyro-container" aria-hidden="true">
+          <div class="gyro-sphere">
+            <div class="gyro-core"></div>
+            
+            <div class="gyro-orbit gyro-orbit-1">
+              <div class="gyro-orbit-inner">
+                <div class="gyro-ring"></div>
+                <div class="gyro-node"></div>
+              </div>
+            </div>
+            
+            <div class="gyro-orbit gyro-orbit-2">
+              <div class="gyro-orbit-inner reverse">
+                <div class="gyro-ring"></div>
+                <div class="gyro-node"></div>
+              </div>
+            </div>
+            
+            <div class="gyro-orbit gyro-orbit-3">
+              <div class="gyro-orbit-inner fast">
+                <div class="gyro-ring"></div>
+                <div class="gyro-node"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow reveal">LAUNCHING 2026</p>
+          <h1 class="hero-title reveal">Coming Soon</h1>
+          <p class="hero-subtitle reveal">The next evolution of personal intelligence. We're building the infrastructure for autonomous companion agents.</p>
+        </div>
+        
+        <button class="scroll-indicator reveal" onclick="document.getElementById('waitlist-section').scrollIntoView({ behavior: 'smooth' })" aria-label="Scroll to waitlist">
+          <span>Scroll to join waitlist</span>
+          <div class="scroll-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+        </button>
+      </section>
+
+      <!-- Section 2: Form -->
+      <section class="form-section" id="waitlist-section">
+        <div class="form-container reveal">
+          <div class="form-header">
+            <h2 class="form-title">Join the Waitlist</h2>
+            <p class="form-subtitle">Secure early access to the developer SDK and exclusive updates.</p>
+          </div>
+
+          <form class="waitlist" id="waitlistForm" novalidate>
+            <div class="form-panel">
+              <div class="field">
+                <label for="nameInput">Name</label>
+                <input type="text" id="nameInput" name="name" placeholder="Your name" autocomplete="name">
+              </div>
+
+              <div class="field">
+                <label for="emailInput">Email <span class="req">*</span></label>
+                <input type="email" id="emailInput" name="email" placeholder="you@company.com" autocomplete="email" required>
+              </div>
+
+              <fieldset class="field">
+                <legend>What are you interested in?</legend>
+                <div class="tabs-3d" id="interestTabs" role="group" aria-label="Interests">
+                  <button type="button" class="tab-3d" data-value="early-access" aria-pressed="false">
+                    <span class="tab-face">Early access</span>
+                  </button>
+                  <button type="button" class="tab-3d" data-value="product-updates" aria-pressed="false">
+                    <span class="tab-face">Product updates</span>
+                  </button>
+                  <button type="button" class="tab-3d" data-value="enterprise" aria-pressed="false">
+                    <span class="tab-face">Enterprise</span>
+                  </button>
+                  <button type="button" class="tab-3d" data-value="partnership" aria-pressed="false">
+                    <span class="tab-face">Partnership</span>
+                  </button>
+                  <button type="button" class="tab-3d" data-value="developer" aria-pressed="false">
+                    <span class="tab-face">Developer SDK</span>
+                  </button>
+                  <button type="button" class="tab-3d" data-value="other" aria-pressed="false">
+                    <span class="tab-face">Something else</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="messageInput">Tell us what you're looking for</label>
+                <textarea id="messageInput" name="message" rows="3" placeholder="Optional — share your use case or what you'd like MYOBOT to do for you"></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn" id="submitBtn">
+                <span class="submit-label">Join the waitlist</span>
+                <span class="submit-shine" aria-hidden="true"></span>
+              </button>
+
+              <p class="feedback" id="formFeedback" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom reveal">
+      <span>&copy; 2026 MYOBOT. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
